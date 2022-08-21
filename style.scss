@@ -11,7 +11,7 @@
     width: 100%;
     margin: 0 auto;
 }
-.hero1{
+.navbar{
     box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
     nav{
         display: flex;
@@ -70,8 +70,64 @@
     }
 }
 
+
+
+.heroBody{
+    max-width: 770px;
+    width: 100%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    h1{
+        color: #1E0E62;
+        font-weight: 700;
+        font-size: 72px;
+        line-height: 86px;
+    }
+    p{
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 32px;
+        color: rgba(21, 20, 57, 0.4);
+        margin-top: 44px;
+    }
+    #btn{
+        margin: 44px 0;
+        padding: 15px 80px;
+        background-color: #25DAC5;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 100px;
+    }
+    .learnMore{
+        text-decoration: none;
+        color: #25DAC5;
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 725px ){
-    .hero1{
+    .navbar{
         nav{
             position: relative;
             padding: 20px 0;
@@ -86,9 +142,10 @@
                 position: absolute;
                 top: 75px;
                 width: 100%;
-                background-color: rgb(119, 119, 119, .1);
+                background-color: rgba(80, 104, 95, 0.7);
                 a{
                     padding: 15px ;
+                    color: rgb(135, 235, 185);
                 }
                 a:hover{
                     background-color: #25DAC5;
@@ -107,6 +164,24 @@
                     font-size: 16px;
                 }
             }
+        }
+    }
+    //another section
+    .heroBody{
+        margin-top: 50px;
+        h1{
+            font-weight: 600;
+            font-size: 52px;
+            line-height: 66px;
+        }
+        p{
+            font-size: 20px;
+            line-height: 30px;
+            padding: 0 10px;
+        }
+        #btn{
+            margin: 44px 0;
+            padding: 10px 40px;
         }
     }
 }
